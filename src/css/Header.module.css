@@ -1,0 +1,40 @@
+body {
+  background-color: #ffffff; 
+}
+
+.container {
+  height: 8vh;
+  display: flex; /* 바로 하위 태그 */
+  /* position: sticky; 요소를 고정 위치로 설정 */
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 180px;
+  background-color: #dddddd;
+  z-index: 1000; /* z값 */
+
+}
+.logo {
+  display: flex; /* 가로 졍렬*/
+  align-items: center; /* 수직 가운데 정렬*/
+  cursor: pointer; /* 커서 모양 변경 , 손가락 모양으로*/
+}
+.img {
+  height: 80px;
+  width: 120px;
+}
+
+.title {
+  color: black;
+  font-size: 40px;
+  color: rgb(0, 185, 0);
+}
+.nav, .siteItem {
+  cursor : pointer;
+  font-size: 20px;
+}
+
+.siteItem{
+  margin-left: 40px;
+}
