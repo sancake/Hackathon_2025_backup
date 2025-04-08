@@ -1,7 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
 import MainImg from '../Image/startpage.png';
+import WyImg from '../Image/wy.png';
+import CiIamge from '../Image/CodeImprovement.png';
+import CaIamge from '../Image/CodeAnalysis.png';
 import styles from '../css/MainPage.module.css'
+
 const MainPage = () => {
     return (
         <>
@@ -22,8 +26,15 @@ const MainPage = () => {
                 <section className={styles.mold}>
                     <h1 className={styles.title}>주요 기능</h1>
                     <div className={styles.bind}>
+                        <div className={styles.member}>
+                        <img src={CiIamge} alt="CiIamge" className={styles.memberPicture}/>
                         <p className={styles.detail}>코드 분석</p>
+                        </div>
+
+                        <div className={styles.member}>
+                        <img src={CaIamge} alt="CaIamge" className={styles.memberPicture}/>
                         <p className={styles.detail}>코드 개선</p>
+                        </div>
                     </div>
                 </section>
 
@@ -31,22 +42,27 @@ const MainPage = () => {
                     <h1 className={styles.title}>팀원</h1>
                     <div className={styles.bind}>
                         <div className={styles.member}>
-                        <h2>이동주</h2>
-                        <p>맡은 일</p>
+                            <img src={WyImg} alt="memberPicture" className={styles.memberPicture}/>
+                            <h2>이동주</h2>
+                            <p>맡은 일</p>
                         </div>
 
-                        <div>
-                        <h2>임서연</h2>
-                        <p>맡은 일</p>
-                        </div>
-                        <div>
-                        <h2>이자목</h2>
-                        <p>맡은 일</p>
+                        <div className={styles.member}>
+                        <img src={WyImg} alt="memberPicture" className={styles.memberPicture}/>
+                            <h2>임서연</h2>
+                            <p>맡은 일</p>
                         </div>
 
-                        <div>
-                        <h2>정원영</h2>
-                        <p>맡은 일</p>
+                        <div className={styles.member}>
+                        <img src={WyImg} alt="memberPicture" className={styles.memberPicture}/>
+                            <h2>이자목</h2>
+                            <p>맡은 일</p>
+                        </div>
+
+                        <div className={styles.member}>
+                        <img src={WyImg} alt="memberPicture" className={styles.memberPicture}/>
+                            <h2>정원영</h2>
+                            <p>맡은 일</p>
                         </div>
                     </div>
                 </section>

@@ -28,6 +28,16 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
-h1 {
+.mold h1 {
     background-color: greenyellow;
+}
+.memberPicture {
+    height:  200px;
+    width: 200px;
+    border-radius: 70%;
+    border: 1px solid black;
+}
+.member {
+    text-align:center;
+    padding: 15px;
 }

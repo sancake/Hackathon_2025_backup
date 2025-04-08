@@ -2,12 +2,15 @@
 import { useNavigate } from 'react-router-dom';
 import styles from '../css/Header.module.css';
 import logo from '../Image/logo.png';
-
+import React from 'react';
 
 
 const Header = () => {
     const navigator = useNavigate();
-
+    const GitLogin = () => {
+        window.location.href = "https://dong.comon.kr/login/oauth2/code/gitlab";
+    }
+    <a href="https://www.flaticon.com/kr/free-icons/github" title="github 아이콘">Github 아이콘 제작자: Pixel perfect - Flaticon</a>
   return (
     <header className={styles.container}>
         <div className={styles.logo}>
@@ -24,9 +27,10 @@ const Header = () => {
             </div>
         
         <nav className={styles.nav}>
-            <div className={styles.navItem} onClick={() => navigator('/login')}>
+            {/* <div className={styles.navItem} onClick={() => GitLogin}>
                 로그인
-            </div>
+            </div> */}
+            <button onClick={GitLogin} className={styles.navItem}>깃허브 로그인</button>
         </nav>
     </header>
   );
