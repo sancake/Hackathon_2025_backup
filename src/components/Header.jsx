@@ -21,6 +21,9 @@ const Header = () => {
                 <div className={styles.siteItem} onClick={() => navigator('/CodeAnalysis')}>
                     코드분석
                 </div>
+                <div className={styles.siteItem} onClick={() => navigator('/ComplexityAssessment')}>
+                    문제풀기
+                </div>
                 <div className={styles.siteItem} onClick={() => navigator('/CodeImprovement')}>
                     코드개선
                 </div>
@@ -30,7 +33,8 @@ const Header = () => {
             {/* <div className={styles.navItem} onClick={() => GitLogin}>
                 로그인
             </div> */}
-            <button onClick={GitLogin} className={styles.navItem}>깃허브 로그인</button>
+            <i class="fi fi-brands-github"><button onClick={GitLogin} className={styles.navItem}>깃허브 로그인</button></i>
+            
         </nav>
     </header>
   );

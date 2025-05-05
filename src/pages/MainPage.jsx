@@ -1,14 +1,19 @@
 import React from "react";
+
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 import MainImg from '../Image/startpage.png';
 import WyImg from '../Image/wy.png';
 import CiIamge from '../Image/CodeImprovement.png';
 import CaIamge from '../Image/CodeAnalysis.png';
+
 import styles from '../css/MainPage.module.css'
 
 const MainPage = () => {
     return (
         <>
+            
             <Header />
             <div>
                 <img src={MainImg} alt="MainImg" className={styles.MainImg}/>
@@ -33,8 +38,16 @@ const MainPage = () => {
 
                         <div className={styles.member}>
                         <img src={CaIamge} alt="CaIamge" className={styles.memberPicture}/>
+                        <p className={styles.detail}>문제 추천</p>
+                        </div>
+                        
+                        <div className={styles.member}>
+                        <img src={CaIamge} alt="CaIamge" className={styles.memberPicture}/>
                         <p className={styles.detail}>코드 개선</p>
                         </div>
+                        
+
+                        
                     </div>
                 </section>
 
@@ -67,6 +80,7 @@ const MainPage = () => {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </>
     );
 };

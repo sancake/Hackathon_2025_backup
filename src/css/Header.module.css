@@ -11,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 180px;
-  background-color: #dddddd;
+  background-color: #e0d9d9;
   z-index: 1000; /* z값 */
 
 }

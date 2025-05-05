@@ -1,0 +1,135 @@
+.main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.editorPading {
+  margin: 20px;
+  width: 45%;
+  height: 85%;
+  border-radius: 8px;
+  background-color: #e9fae3;
+}
+
+.editor {
+  margin: auto;
+  width: 90%;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.selectBox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 30px 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.selectBox:hover {
+  border-color: #666;
+}
+
+.selectBox:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectBox option {
+  padding: 10px;
+}
+
+/* 아이콘 추가 */
+.selectBox::after {
+  content: '\25BC';
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.selectBoxColleact {
+  /* padding: 10px,10px,10px,10px; */
+  margin-top: 3%;
+}
+.radarchart {
+  width: 45%;
+  height: 85%;
+  margin-right: 20px;
+  background-color: #e9fae3;
+  border-radius: 8px;
+  /* display:flex; */
+  /* align-items: center; */
+  
+}
+
+.radarchartImg {
+  margin-left: 15%;
+  width: 600px;
+}
+
+.analyzeBtn {
+  /* /* margin-top: 16px;  */
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.analyzeBtn:hover {
+  background-color: #388e3c;
+}
+.radarChartText {
+  padding-top: 20px;
+  padding-left: 40%;
+}
+.fileInput{
+  display: none;
+}
+
+.fileInputLabel{
+  /* height: 300px;
+  width: 100%; */
+  /* padding: 10px 300px 5px 5px; */
+  display: block;
+  height: 300px;
+  
+  font-size: 40px;
+  
+  cursor: pointer;
+
+  display: flex;               
+  justify-content: center;     
+  align-items: center;      
+  
+  border: 2px dashed #333;
+  transition: all 0.3s ease-in-out;
+}
+.fileInputLabel:hover {
+  border-color: #2996f0ee;
+  color: #2996f0ee;
+}

@@ -1,0 +1,236 @@
+.topMain{
+    /* height: 100vh; */
+    display: flex;
+    background-color: #f0f2f5;
+    padding: 20px;
+    gap: 20px;
+}
+
+.codingProblem {
+    height: 92vh;
+    width: 60vw;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.codingProblemTitle {
+    height: 20%;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codingProblemTitleText {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.codingProblemText {
+    height: 80%;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.codingProblemStatementText h1 {
+    font-size: 36px;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.codingProblemStatementText p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.codingProblemMenu {
+    height: 92vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.codingProblemOptions {
+    height: 55%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+.codingProblemOptionsText {
+    color: #ffffff;
+    background: linear-gradient(to right, #2193b0,#6dd5ed );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.codingProblemResult {
+    height: 45%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ===============박스 관련 ============= */
+.selectBoxGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*====================언어 박스=========================================*/
+.selectBoxLang{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 30px 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
+.selectBoxLang:hover {
+    border-color: #666;
+}
+
+.selectBoxLang:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectBoxLang option {
+    padding: 10px;
+}
+
+/* 아이콘 추가 */
+.selectBoxLang::after {
+    content: '\25BC';
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/*=======================언어박스======================================*/
+/*===================알고리즘박스=========================================*/
+.selectBoxAlgo{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 30px 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
+.selectBoxAlgo:hover {
+    border-color: #666;
+}
+
+.selectBoxAlgo:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectBoXAlgo option {
+    padding: 10px;
+}
+/*===================알고리즘박스=========================================*/
+/* ====================난이도 박스=============================== */
+.selectBoxDifficulty{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 30px 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    width: 220px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
+.selectBoxDifficulty:hover {
+    border-color: #666;
+}
+
+.selectBoxDifficulty:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectBoxDifficulty option {
+    padding: 10px;
+}
+/* ====================난이도 박스=============================== */
+/* ====================문제 설명================================= */
+
+.elementDescriptionText{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* .selectBoxGroup {
+    padding: 14px 32px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.selectBoxGroup:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+} */

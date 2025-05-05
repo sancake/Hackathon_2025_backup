@@ -1,0 +1,19 @@
+.footer {
+    height: 18vh;
+    background-color: beige;
+}
+.container{
+    margin: 0, auto;
+    padding-top: 20px;
+}
+.company {
+    font-size: 25px;
+    font-weight: bold;
+}
+.bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+.content {
+    font-size: 15px;
+}

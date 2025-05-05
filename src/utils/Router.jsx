@@ -4,6 +4,7 @@ import MainPage from '../pages/MainPage';
 import LoginPage from '../pages/LoginPage';
 import CodeAnalysis from '../pages/CodeAnalysis';
 import CodeImprovement from '../pages/CodeImprovement';
+import ComplexityAssessment from '../pages/ComplexityAssessment' 
 // import SignupPage from '../pages/SignupPage';
 
 const GlobalStyle = createGlobalStyle`
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: 'CodeImprovement',
         element: <CodeImprovement/>
+      },
+      {
+        path: 'ComplexityAssessment',
+        element: <ComplexityAssessment/>
       },
     ],
   },
